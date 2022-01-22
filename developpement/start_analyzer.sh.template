@@ -1,0 +1,26 @@
+# Bilygine - GPE - ETNA
+#OSX
+#export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+### Log4j2
+export LOG4J_FILE=conf/log4j2.xml
+export LOG4J=-Dlog4j.configurationFile=$LOG4J_FILE
+
+### Main class
+export MAIN_CLASS=com.bilygine.analyzer.Analyzer
+
+### Analyzer version
+export VERSION=1.0
+
+### Dependency
+export JAR_FILE=analyzer-core-$VERSION.jar
+export DEPENDENCIES=lib/*
+
+### Debugger configuration
+export DEBUGGER_PORT=8234
+export DEBUGGER_SERVER=y
+export DEBUGGER_SUSPEND=n
+export DEBUGGER=-agentlib:jdwp=transport=dt_socket,address=localhost:$DEBUGGER_PORT,server=$DEBUGGER_SERVER,suspend=$DEBUGGER_SUSPEND
+
+### Execution
+$JAVA_HOME/bin/java -cp "$JAR_FILE:$DEPENDENCIES" $DEBUGGER $LOG4J $MAIN_CLASS

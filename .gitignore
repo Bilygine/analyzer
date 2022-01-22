@@ -1,0 +1,25 @@
+analyzer-sentiment-analysis/google_implementation/start.sh
+analyzer-core/\.idea/
+
+analyzer-core/target/
+
+\.DS_Store
+
+analyzer-core/analyzer-core\.iml
+
+*.jar
+
+developpement/local/
+
+#Test File
+myFile
+ 
+analyzer-core/conf/*
+analyzer-volume_analysis/.idea/
+analyzer-volume_analysis/src/__pycache__/
+analyzer-volume_analysis/analyze_results/
+analyzer-volume_analysis/bilygine_google_credentials.json.txt
+analyzer-volume_analysis/audios/new_analyze.raw
+
+#Conf directory
+analyzer-core/conf

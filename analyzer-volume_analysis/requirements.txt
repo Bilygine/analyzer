@@ -1,0 +1,6 @@
+numpy
+pysoundfile
+soundfile
+wave
+google-cloud-storage
+flask
